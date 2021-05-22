@@ -1,1 +1,4 @@
 porter_test
+punkt
+stopwords
+wordnet
