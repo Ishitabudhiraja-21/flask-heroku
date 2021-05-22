@@ -248,12 +248,10 @@ def convert():
     
     return render_template("convert.html",text=speech)
         
-    
-
-
-
-
-if __name__ == "__main__": #return main if at current script 
-    app.run(debug=True) #debug=True if any changes then do not need to re run python  script again and again 
+   
+if __name__ == "__main__":
+    import warnings
+    warnings.warn("use 'python -m nltk', not 'python -m nltk.downloader'",         DeprecationWarning)
+    app.run_server(debug=True)
     
 
